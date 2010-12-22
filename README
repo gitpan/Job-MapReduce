@@ -1,0 +1,50 @@
+Job-MapReduce
+
+A generic Map Reduce job launcher.
+
+Map/Reduce is an approach that collects data in parallel then processes data in
+serial. A Map/Reduce job has 4 components/steps.
+
+ Batch : devide the targets into batches.
+ Map   : create threads to collect data from/for each batch in parallel.
+ Sort  : aggregate collected data by status.
+ Reduce: (optional) process aggregated data serially.
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+	perl Makefile.PL
+	make
+	make test
+	make install
+
+SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with the
+perldoc command.
+
+    perldoc Job::MapReduce
+
+You can also look for information at:
+
+    RT, CPAN's request tracker
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Job-MapReduce
+
+    AnnoCPAN, Annotated CPAN documentation
+        http://annocpan.org/dist/Job-MapReduce
+
+    CPAN Ratings
+        http://cpanratings.perl.org/d/Job-MapReduce
+
+    Search CPAN
+        http://search.cpan.org/dist/Job-MapReduce/
+
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2010 Kan Liu
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+
